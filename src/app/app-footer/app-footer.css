@@ -1,0 +1,10 @@
+.footer{
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    color: white;
+}
+
+.footer p{
+    margin-bottom: 0px !important;
+}
