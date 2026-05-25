@@ -1,5 +1,5 @@
 {
-  "root": "dist/catalogoWeb",
+  "root": "dist/catalogoWeb/browser",
   "routes": {
     "/**": "index.html"
   }
