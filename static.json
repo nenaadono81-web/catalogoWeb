@@ -1,0 +1,6 @@
+{
+  "root": "dist/catalogoWeb/browser",
+  "routes": {
+    "/**": "index.html"
+  }
+}
