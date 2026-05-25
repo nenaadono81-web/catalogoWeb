@@ -1,0 +1,15 @@
+.contenedor-principal{
+    min-height: 100vh;
+
+    background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+}
+.btn{
+    margin-right: 5px;
+}

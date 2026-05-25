@@ -1,1 +1,45 @@
-<p>movie works!</p>
+<div class="container-fluid contenedor-principal">
+    <div class="container mt-5">
+        <div class="card shadow-lg">
+            <div class="card-header bg-dark text-white">
+                Detalle de Película
+            </div>
+            <div class="card-body">
+                @if(movie){
+                <h3>
+                    {{ movie.title }}
+                </h3>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">
+                    Sinopsis: {{ movie.synopsis }}
+                    </li>
+                    <li class="list-group-item">
+                    Año: {{ movie.year }}
+                    </li>
+                    <li class="list-group-item">
+                    Cover: {{ movie.cover }}
+                    </li>
+                </ul>
+                <a
+                    [routerLink]="['/editarMovie', movie.id]"
+                    class="btn btn-secondary"
+                >
+                    Editar
+                </a>
+                <button
+                    class="btn btn-secondary"
+                    (click)="deleteMovie(movie.id)"
+                >
+                    Eliminar
+                </button>
+                }
+                <a
+                    routerLink="/movies"
+                    class="btn btn-secondary"
+                >
+                    Regresar
+                </a>
+            </div>
+        </div>
+    </div>   
+</div>
