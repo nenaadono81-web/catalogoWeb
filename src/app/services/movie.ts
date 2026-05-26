@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MovieService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://127.0.0.1:8000/api';
+  private apiUrl = 'https://catalogo-production-96a9.up.railway.app/api';
+  //private apiUrl = 'http://127.0.0.1:8000/api';
 
   getMovies() {
     return this.http.get<any[]>(`${this.apiUrl}/allMovies`);
